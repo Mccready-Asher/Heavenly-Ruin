@@ -1,0 +1,69 @@
+%YAML 1.1
+%TAG !u! tag:unity3d.com,2011:
+--- !u!78 &1
+TagManager:
+  serializedVersion: 2
+  tags:
+  - GunProjectile
+  - breakable
+  layers:
+  - Default
+  - TransparentFX
+  - Ignore Raycast
+  - 
+  - Water
+  - UI
+  - 
+  - 
+  - 
+  - 
+  - 
+  - 
+  - 
+  - 
+  - 
+  - 
+  - 
+  - 
+  - 
+  - 
+  - 
+  - 
+  - 
+  - 
+  - 
+  - 
+  - 
+  - 
+  - 
+  - 
+  - 
+  - 
+  m_SortingLayers:
+  - name: Default
+    uniqueID: 0
+    locked: 0
+  - name: background
+    uniqueID: 547752219
+    locked: 0
+  - name: floorStuff
+    uniqueID: 2277796029
+    locked: 0
+  - name: collidables
+    uniqueID: 2789330849
+    locked: 0
+  - name: bullets
+    uniqueID: 1334795183
+    locked: 0
+  - name: Entities
+    uniqueID: 3024222579
+    locked: 0
+  - name: player
+    uniqueID: 1401394573
+    locked: 0
+  - name: foreground
+    uniqueID: 779344599
+    locked: 0
+  - name: walls
+    uniqueID: 4069114321
+    locked: 0
