@@ -6,6 +6,7 @@ TagManager:
   tags:
   - GunProjectile
   - breakable
+  - interactible
   layers:
   - Default
   - TransparentFX

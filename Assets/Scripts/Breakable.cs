@@ -3,7 +3,7 @@ using System.Collections.Generic;
 using UnityEngine;
 using UnityEngine.UIElements;
 
-public class Obstacle : MonoBehaviour
+public class Breakable : MonoBehaviour
 {
     public ParticleSystem ps;
     public AudioSource breakSound;

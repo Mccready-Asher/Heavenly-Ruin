@@ -28,7 +28,7 @@ Transform:
   m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
   m_LocalPosition: {x: 0, y: 0, z: 0}
   m_LocalScale: {x: 1, y: 1, z: 1}
-  m_ConstrainProportionsScale: 0
+  m_ConstrainProportionsScale: 1
   m_Children: []
   m_Father: {fileID: 2839872061261534914}
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
@@ -138,9 +138,9 @@ GameObject:
   m_Component:
   - component: {fileID: 2839872061261534914}
   - component: {fileID: 2400652664411497120}
-  - component: {fileID: 6982849471024762864}
   - component: {fileID: 5162454222432649269}
   - component: {fileID: 5880841671428795547}
+  - component: {fileID: 3522744608955635794}
   m_Layer: 10
   m_Name: CratePrefab
   m_TagString: breakable
@@ -158,7 +158,7 @@ Transform:
   serializedVersion: 2
   m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
   m_LocalPosition: {x: 0, y: 0, z: 0}
-  m_LocalScale: {x: 5, y: 5, z: 5}
+  m_LocalScale: {x: 15, y: 15, z: 15}
   m_ConstrainProportionsScale: 1
   m_Children:
   - {fileID: 3659702422964816384}
@@ -217,21 +217,6 @@ SpriteRenderer:
   m_WasSpriteAssigned: 1
   m_MaskInteraction: 0
   m_SpriteSortPoint: 0
---- !u!114 &6982849471024762864
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 6180764365656399929}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: 114fe3fd58beb64428bb9676b9f60de8, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: 
-  ps: {fileID: 6209268031395808243}
-  breakSound: {fileID: 1259192165146644455}
-  hp: 20
 --- !u!50 &5162454222432649269
 Rigidbody2D:
   serializedVersion: 4
@@ -304,6 +289,21 @@ BoxCollider2D:
   serializedVersion: 2
   m_Size: {x: 0.62, y: 0.62}
   m_EdgeRadius: 0
+--- !u!114 &3522744608955635794
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 6180764365656399929}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 114fe3fd58beb64428bb9676b9f60de8, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  ps: {fileID: 6209268031395808243}
+  breakSound: {fileID: 1259192165146644455}
+  hp: 20
 --- !u!1 &8598282369976339317
 GameObject:
   m_ObjectHideFlags: 0
@@ -332,7 +332,7 @@ Transform:
   serializedVersion: 2
   m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
   m_LocalPosition: {x: 0, y: 0, z: 0}
-  m_LocalScale: {x: 0.4, y: 0.4, z: 0.4}
+  m_LocalScale: {x: 2, y: 2, z: 2}
   m_ConstrainProportionsScale: 1
   m_Children: []
   m_Father: {fileID: 2839872061261534914}

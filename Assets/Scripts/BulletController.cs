@@ -24,12 +24,10 @@ public class BulletController : MonoBehaviour
     }
     private void OnCollisionEnter2D(Collision2D coll)
     {
-        print("bonk");
         GameObject otherThing = coll.collider.gameObject;
         if (otherThing.tag =="breakable")
         {
-            otherThing.GetComponent<Obstacle>().tick(damage);
-            print("crack");
+            otherThing.GetComponent<Breakable>().tick(damage);
             StartCoroutine("waitDestroyBullet");
         }
         Destroy(gameObject);
