@@ -24,23 +24,25 @@ public class GunController : MonoBehaviour
     // Update is called once per frame
     void Update()
     {
-
-        fireButtonPressed = Input.GetButtonDown("Fire1"); // is the fire button pressed?
-
-        if (!fireButtonPressed && !fireButtonReleased) fireButtonReleased = true; //if the fire button is released and the variable has not been updated, update it.
-
-        if (fireButtonPressed && timeSinceLastShot >= rOFCap) //if the fire button is pressed and sufficient time has elapsed
+        if (!gameController.paused)
         {
-            if (isFullAuto) //fire if you're full auto
-            {
-                fire();
-            }
-            else if (fireButtonReleased) // if you're semi auto and the button's been released.
-            {
-                fire(); //fire
-                fireButtonReleased = false; //and reset the button.
-            }
+            fireButtonPressed = Input.GetButtonDown("Fire1"); // is the fire button pressed?
 
+            if (!fireButtonPressed && !fireButtonReleased) fireButtonReleased = true; //if the fire button is released and the variable has not been updated, update it.
+
+            if (fireButtonPressed && timeSinceLastShot >= rOFCap) //if the fire button is pressed and sufficient time has elapsed
+            {
+                if (isFullAuto) //fire if you're full auto
+                {
+                    fire();
+                }
+                else if (fireButtonReleased) // if you're semi auto and the button's been released.
+                {
+                    fire(); //fire
+                    fireButtonReleased = false; //and reset the button.
+                }
+
+            }
         }
     }
     private void FixedUpdate()

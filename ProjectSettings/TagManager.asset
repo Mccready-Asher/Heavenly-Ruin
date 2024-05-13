@@ -7,11 +7,13 @@ TagManager:
   - GunProjectile
   - breakable
   - interactible
+  - enemy
+  - wall
   layers:
   - Default
   - TransparentFX
   - Ignore Raycast
-  - 
+  - walls
   - Water
   - UI
   - 

@@ -26,4 +26,13 @@ EditorBuildSettings:
   - enabled: 1
     path: Assets/Scenes/YouWon.unity
     guid: d070a90c3fe94d840b90d67ac6f9ed7e
+  - enabled: 1
+    path: Assets/Scenes/Credits.unity
+    guid: 5617bfdd95a4a5643be9e588a10390a8
+  - enabled: 1
+    path: Assets/Scenes/Controls.unity
+    guid: 750a896bbd56897459e1f0eb2d0dce65
+  - enabled: 1
+    path: Assets/Scenes/YouLost.unity
+    guid: d7d0cfff73b4c964f998e2cabbbd00e0
   m_configObjects: {}

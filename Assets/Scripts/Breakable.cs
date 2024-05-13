@@ -12,6 +12,7 @@ public class Breakable : MonoBehaviour
     private void Start()
     {
         ps.Pause();
+        ps.GetComponent<Renderer>().enabled = false;
     }
 
     public void kill()
